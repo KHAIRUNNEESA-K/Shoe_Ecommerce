@@ -1,0 +1,64 @@
+.users-page {
+  padding: 20px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+  display: block;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.block-btn,
+.unblock-btn,
+.delete-btn {
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.block-btn {
+  background-color: #f39c12;
+}
+
+.unblock-btn {
+  background-color: #2ecc71;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .users-page {
+    padding: 10px;
+  }
+
+  .block-btn,
+  .unblock-btn,
+  .delete-btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-btn,
+  .unblock-btn,
+  .delete-btn {
+    padding: 4px 6px;
+    font-size: 0.75rem;
+  }
+}

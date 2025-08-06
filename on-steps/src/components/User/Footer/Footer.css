@@ -1,0 +1,136 @@
+.footer {
+  background-color: #dfd4d4;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-logo img {
+  height: 32px;
+  width: auto;
+}
+
+.footer-logo p {
+  font-size: 1.75rem; 
+  font-weight: 700;
+  font-family: serif;
+  color: rgb(255, 123, 0);
+  margin: 0;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-social-icons p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-icons-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-icons-container img {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  transition: transform 0.3s;
+}
+
+.footer-icons-container img:hover {
+  transform: scale(1.1);
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer-copyright hr {
+  width: 80%;
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto 4px;
+  border-radius: 5px;
+}
+
+.footer-copyright p {
+  font-size: 0.75rem;
+  color: #0e0d0d;
+  margin: 0;
+}
+
+/* ========== Responsive Media Queries ========== */
+@media (max-width: 768px) {
+  .footer-logo p {
+    font-size: 1.5rem;
+  }
+
+  .footer-icons-container img {
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+  }
+
+  .footer-social-icons p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 8px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+  }
+
+  .footer-logo p {
+    font-size: 1.3rem;
+  }
+
+  .footer-icons-container {
+    gap: 6px;
+  }
+
+  .footer-icons-container img {
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+  }
+
+  .footer-social-icons p {
+    font-size: 0.8rem;
+  }
+
+  .copyright p {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,162 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-image-background {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5vw;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.hero-text-content {
+  color: rgb(245, 234, 195);
+}
+
+.hero-introducing {
+  font-size: 1.5rem;
+  color: #eee;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.hero-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-family: serif;
+}
+
+.hero-title.sneakers {
+  font-size: 3rem;
+  font-family: serif;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.try-now-button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.try-now-button:hover {
+  background-color: #cc7a00;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-title.sneakers {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .try-now-button {
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-introducing {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-title.sneakers {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}

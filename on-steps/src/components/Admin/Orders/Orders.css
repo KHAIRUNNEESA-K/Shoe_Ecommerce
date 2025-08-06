@@ -1,0 +1,161 @@
+.orders-container {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+}
+
+.order-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #e4f5f7;
+}
+
+.order-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.order-status {
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.order-status.delivered {
+  background: #4caf50;
+  color: #fff;
+}
+
+.order-status.pending {
+  background: #ff9800;
+  color: #fff;
+}
+
+.order-status.cancelled {
+  background: #f44336;
+  color: #fff;
+}
+
+.order-items {
+  margin-top: 20px;
+  background-color: #262626;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.order-items h4 {
+  color: #ffc400;
+  margin-bottom: 15px;
+}
+
+.order-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #444;
+  align-items: center;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #555;
+}
+
+.order-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.order-divider {
+  margin-top: 20px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+.orders-loading,
+.orders-error,
+.orders-empty {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .order-item-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .orders-container {
+    padding: 20px 10px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-item-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .order-item-details {
+    font-size: 14px;
+  }
+
+  .order-status {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
